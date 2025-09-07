@@ -32,7 +32,7 @@ Update route-map:
 /Products/Delete/8 = ProductController.Delete, HttpPost, https://localhost:7028/Products/Delete/8
 
 
-Type in the URL path after localhost:{port} to get directly into the page. Example: /Products/Details/1 will lead you to the details page of item 1.
+Type in the URL path after localhost:{port} to get directly into the page and verify. Example: /Products/Details/1 will lead you to the details page of item 1.
 
 <img width="1897" height="1017" alt="Week3VerifyProduct" src="https://github.com/user-attachments/assets/01241daf-b77a-4491-81ec-bab1e3eaa2cc" /> 
 <img width="1893" height="997" alt="image" src="https://github.com/user-attachments/assets/0eefe75b-9056-478e-9357-de7ca3bcba3f" />
