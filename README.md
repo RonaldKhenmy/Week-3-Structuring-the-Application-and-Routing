@@ -9,27 +9,27 @@ Update design-note:
 An interface and service folder were added to the project along with a new view. The app follows the Separation of Concerns by focusing on the single responsibility of measuring time using the interface and service implementation without interfering with the products. The reason AddScoped was used because I wanted services to be created once per client request, which is registered by IDaysPurchased. The reason I chose IDaysPurchased as my dependency injection was to measure the days the item was purchased. Other dependencies include MvcProductsContext for the database and ILogger to send logs to the console command.
 
 Update route-map: 
-/ = HomeController.Index, HttpGet, https://localhost:7028/,
+/ = HomeController.Index, HttpGet, https://localhost:7028/
 
-/Privacy = HomeController.Privacy, HttpGet, https://localhost:7028/Privacy,
+/Privacy = HomeController.Privacy, HttpGet, https://localhost:7028/Privacy
 
-/Products = ProductController.Index, HttpGet, https://localhost:7028/Products,
+/Products = ProductController.Index, HttpGet, https://localhost:7028/Products
 
-/Products/Details/1 = ProductController.Details, HttpGet, https://localhost:7028/Products/Details/1,
+/Products/Details/1 = ProductController.Details, HttpGet, https://localhost:7028/Products/Details/1
 
-/Products/Details/1/DaysPurchased = ProductController.DaysPurchased, https://localhost:7028/Products/Details/1/DaysPurchased,
+/Products/Details/1/DaysPurchased = ProductController.DaysPurchased, https://localhost:7028/Products/Details/1/DaysPurchased
 
-/Products/Create = ProductController.Create, HttpGet, https://localhost:7028/Products/Create,
+/Products/Create = ProductController.Create, HttpGet, https://localhost:7028/Products/Create
 
-/Products/Create = ProductController.Create, HttpPost, https://localhost:7028/Products/Create,
+/Products/Create = ProductController.Create, HttpPost, https://localhost:7028/Products/Create
 
-/Products/Edit/1 = ProductController.Edit, HttpGet, https://localhost:7028/Products/Edit/1,
+/Products/Edit/1 = ProductController.Edit, HttpGet, https://localhost:7028/Products/Edit/1
 
-/Products/Edit/1 = ProductController.Edit, HttpPost, https://localhost:7028/Products/Edit/1,
+/Products/Edit/1 = ProductController.Edit, HttpPost, https://localhost:7028/Products/Edit/1
 
-/Products/Delete/8 = ProductController.Delete, HttpGet, https://localhost:7028/Products/Delete/8, 
+/Products/Delete/8 = ProductController.Delete, HttpGet, https://localhost:7028/Products/Delete/8 
 
-/Products/Delete/8 = ProductController.Delete, HttpPost, https://localhost:7028/Products/Delete/8,
+/Products/Delete/8 = ProductController.Delete, HttpPost, https://localhost:7028/Products/Delete/8
 
 
 Type in the URL path after localhost:{port} to get directly into the page. Example: /Products/Details/1 will lead you to the details page of item 1.
