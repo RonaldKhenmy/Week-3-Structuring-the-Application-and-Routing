@@ -17,7 +17,7 @@ Update route-map:
 
 /Products/Details/1 = ProductController.Details, HttpGet, https://localhost:7028/Products/Details/1
 
-/Products/Details/1/DaysPurchased = ProductController.DaysPurchased, https://localhost:7028/Products/Details/1/DaysPurchased
+/Products/Details/1/DaysPurchased = ProductController.DaysPurchased, HttpGet, https://localhost:7028/Products/Details/1/DaysPurchased
 
 /Products/Create = ProductController.Create, HttpGet, https://localhost:7028/Products/Create
 
